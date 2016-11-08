@@ -1,0 +1,76 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>home_work_forms03</title>
+	</head>
+	<body>
+		<header>
+			<h1>Урок "Формы": теги и их атрибуты.</h1>
+			<h3>Расскажите немного о себе...</h3>
+			<p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.</p>
+		</header>
+		<form>	
+		<fieldset>
+			<legend>Коротко о себе</legend>
+				<p><label>Имя: <input type="text" name="name"></label></p>
+				<p><label>Фамилия: <input type="text" name="surname"></label></p>
+				<p>Пол: <label><input type="radio" name="sex" value="Мужской" checked>Мужской</label>
+				<label><input type="radio" name="sex" value="Женский">Женский</label></p>	
+				<p><label>Возраст: <input type="text" name="age"> лет</label></p>			
+		</fieldset>
+		<fieldset>
+			<legend>Подробнее о себе</legend>
+				<p><label><input type="radio" name="about_me" value="Молодой человек" checked>Молодой человек</label></p>
+				<p><label><input type="radio" name="about_me" value="Девушка">Девушка</label></p>
+				</p><label><input type="text" name="date of birth"> Дата рождения</label></p>
+				</p><label><input type="text" name=" family status"> Семейное положение</label></p>
+				<p><label><input type="text" name="Social status"> Социальный статус</label></p>
+				<p><label><input type="text" name="Residence"> Местожительство</label></p>
+				<p>Что вы обычно делаете на выходных:</p>
+				<p><label><input type="checkbox" name="sleep" value="d1"> Сплю</label></p>
+				<p><label><input type="checkbox" name="html"value="d2"> Изучяю html</label></p>
+				<p><label><input type="checkbox" name="friends"value="d3"> Гуляю с друзьями</label></p>
+				<p><label><input type="checkbox" name="play the fool"value="d4"> Валяю дурака :)</label></p>
+				<p><label for="formats">Рассказать о форматах в книге, посвященной HTML:</label></p>
+				<p>
+				<select name="formats" size="1" id="formats">
+				<option>Site frequency:</option>
+				<option>bla bla bla</option>
+				<option>bla bla bla 2</option>
+				</select>
+				</p>
+				<p>Сколько книг вы прочитали за свою жизнь:</p>
+				<p><label><input type="radio" name="HmB_you_read" value="0-10">0-10</label></p>
+				<p><label><input type="radio" name="HmB_you_read" value="11-20">11-20</label></p>
+				<p><label><input type="radio" name="HmB_you_read" value="21-50">21-50</label></p>
+				<p><label><input type="radio" name="HmB_you_read" value="50+">50+</label></p>
+				<p><label for="comments">Ваши коментарии:</label></p>
+				<textarea name="comments" cols="60" rows="7" id="comments"></textarea>
+				<p>
+				<select name="no name" size="3">
+				<option>Первая позиция</option>
+				<option selected>Вторая позиция</option>
+				<option>Третья позиция</option>
+				</select>
+				</p>
+		</fieldset>
+	
+		<fieldset>
+			<legend>И в заключении</legend>
+				<p><label><input type="text" name="noname2" size="30" placeholder="Это поле было заполнено до вас"></label></p>
+				<p>Email:</p>
+				<p><label><input type="email" name="email" size="30"></label></p>
+				<p>Хотите подписаться на самую модную рассылку спама?:<br>Выберите катергории</p>
+				<p><label><input type="checkbox" name="newsletter1"value="oborudovanie"> Оборудование</label></p>
+				<p><label><input type="checkbox" name="newsletter2"value="obed"> Как приготовить обеды</label></p>
+				<p><label><input type="checkbox" name="newsletter3"value="$"> Как заработать миллион за два дня!</label></p>
+				<p>На сколько сложная задача:</p>
+				<p><label><input type="radio" name="zadacha" value="net">Совчем нет</label></p>
+				<p><label><input type="radio" name="zadacha" value="taksebe">Так себе</label></p>
+				<p><label><input type="radio" name="zadacha" value="eleele">Еле справились</label></p>
+		</fieldset>
+			<p><input type="button" name="button" value="Отправить"></p>
+	</form>
+	</body>
+</html>
